@@ -11,10 +11,8 @@ import urllib3
 logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 logging.getLogger().setLevel(logging.INFO)
 
-
 class DeepracerVehicleApiError(Exception):
     pass
-
 
 # Class that interfaces with thea web page to control the DeepRacer, load models, and receive camera data
 class Client:
@@ -163,7 +161,7 @@ class Client:
             self.URL + url, json=data, headers=self.headers, verify=False
         )
         if check_success:
-            if response.status_code != 200 or response.text.find('success":true') < 0:
+            if response.status_code != 200 or response.text.find('success": true') < 0:
                 raise DeepracerVehicleApiError(
                     "Put action failed with body text {}".format(response.text)
                 )
