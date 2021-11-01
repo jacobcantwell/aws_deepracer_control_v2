@@ -1,5 +1,10 @@
-# awsdeepracer_control
- This python package rewrite to support the new version Deepracer Console Software ```version 1.0.606.0```
+# aws_deepracer_control_2
+ 
+This python package rewrite to support the new version Deepracer Console Software ```version 1.0.606.0```
+
+This is a fork from the original work built by https://github.com/lshw54/awsdeepracer_control
+
+I have added some small fixes for API changes to DeepRacer
 
 # What's New
 - Fix the video stream can not display
@@ -62,7 +67,8 @@ client = awsdeepracer_control.Client(password="???", ip="111.222.333.444")
 client.show_vehicle_info()
 ```
 
-# Others
+# Credits
 
-This repo is rewrite from :
+This repo is rewrite from:
+* https://github.com/lshw54/awsdeepracer_control
 * https://github.com/thu2004/deepracer-vehicle-api/

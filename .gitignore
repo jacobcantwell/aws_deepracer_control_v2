@@ -3,3 +3,8 @@ venv
 #package info
 awsdeepracer_control.egg-info
 dist
+src/aws_deepracer_control_v2.egg-info/PKG-INFO
+src/aws_deepracer_control_v2.egg-info/requires.txt
+src/aws_deepracer_control_v2.egg-info/dependency_links.txt
+src/aws_deepracer_control_v2.egg-info/SOURCES.txt
+src/aws_deepracer_control_v2.egg-info/top_level.txt
